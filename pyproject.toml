@@ -18,7 +18,7 @@ funcnodes = "*"
 funcnodes-pandas = ">=0.2.6"
 funcnodes-plotly = "*"
 scipy = ">=1.14"
-funcnodes-span = ">=0.3.0"
+funcnodes-span = ">=0.3.1"
 llvmlite = ">=0.4"
 numba = ">=0.5"
 

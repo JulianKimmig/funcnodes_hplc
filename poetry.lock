@@ -707,13 +707,13 @@ funcnodes = ">=0.4.35"
 
 [[package]]
 name = "funcnodes-span"
-version = "0.3.0"
+version = "0.3.1"
 description = "Spectral Peak ANalysis (SPAN) for funcnodes"
 optional = false
 python-versions = ">=3.11"
 files = [
-    {file = "funcnodes_span-0.3.0-py3-none-any.whl", hash = "sha256:0ce3e95ec75ebe2ef741a53bc3a557a36fa73e77d936dd3ed073eb7234ab28ea"},
-    {file = "funcnodes_span-0.3.0.tar.gz", hash = "sha256:d515a85c65d1e2a3911e88ef92f2999981c6b50528d0a6bde3c057f3ce4d899c"},
+    {file = "funcnodes_span-0.3.1-py3-none-any.whl", hash = "sha256:c45404be41aef54ea0198b5b13bf1e1eba8e53e324be64caad816d92fdfa5e78"},
+    {file = "funcnodes_span-0.3.1.tar.gz", hash = "sha256:ca14e8ba9636165e93b5d162fd1ed3f7837278824fed51e162bec7642d9ac920"},
 ]
 
 [package.dependencies]
@@ -2355,4 +2355,4 @@ propcache = ">=0.2.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11"
-content-hash = "497e7066611b962cafe587a0291964ca3ad97c3ccedc2fdaf68f48d87bfc898b"
+content-hash = "2b7b8f5fe9757d349ef1d4ebd45af61c96acc5646cc90a005daa105c739830bd"
