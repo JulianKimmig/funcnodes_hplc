@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "funcnodes-hplc"
+version = "0.1.0"
+description = ""
+authors = ["Julian Kimmig <julian.kimmig@linkdlab.de>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.urls]
+homepage  = "https://github.com/Linkdlab/funcnodes_hplc"
+source  = "https://github.com/Linkdlab/funcnodes_hplc"
+tracker  = "https://github.com/Linkdlab/funcnodes_hplc/issues"
+download = "https://pypi.org/project/funcnodes-hplc/#files"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+funcnodes = "*"
+funcnodes-pandas = ">=0.2.6"
+funcnodes-plotly = "*"
+scipy = ">=1.14"
+funcnodes-span = ">=0.3.1"
+llvmlite = ">=0.4"
+numba = ">=0.5"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pre-commit = "*"
+funcnodes-module = "^0.1.19"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.plugins."funcnodes.module"]
+module = "funcnodes_hplc"
+shelf = "funcnodes_hplc:NODE_SHELF"
