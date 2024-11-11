@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "funcnodes-hplc"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Julian Kimmig <julian.kimmig@linkdlab.de>"]
 readme = "README.md"
