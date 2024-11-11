@@ -18,7 +18,7 @@ def hplc_report(
     fitted_peaks: Optional[List[PeakProperties]] = None,
     t0: Optional[float] = None,
     noise: Optional[float] = None,
-) -> Tuple[pd.DataFrame, pd.DataFrame]:
+) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     if t0 is None:
         t0 = estimate_t0(x, y)
 
@@ -135,7 +135,7 @@ def hplc_report(
             rundata["total_peak_area_fitted"] / rundata["total_peak_area"]
         )
 
-    return pd.DataFrame([rundata]), pd.DataFrame(datas)
+    return pd.DataFrame([rundata]), pd.DataFrame(datas), pd.DataFrame({"x": x, "y": y})
 
 
 hplc_report_node = fn.NodeDecorator(
@@ -145,6 +145,7 @@ hplc_report_node = fn.NodeDecorator(
     outputs=[
         {"name": "rundata"},
         {"name": "peakdata"},
+        {"name": "signaldata"},
     ],
 )(hplc_report)
 REPORT_SHELF = fn.Shelf(
